@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_card_noshadow" >
+    
+    <TextView 
+        android:id="@+id/textThis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dialog_huodong_guanzhu_text_paddingTop"
+        android:paddingBottom="@dimen/dialog_huodong_guanzhu_text_paddingBottom"
+        android:paddingLeft="@dimen/dialog_huodong_guanzhu_text_padding_h"
+        android:paddingRight="@dimen/dialog_huodong_guanzhu_text_padding_h"
+        android:gravity="center_horizontal"
+        android:text="是否需要当日提醒 ?"
+        android:textSize="16sp"
+        android:textColor="@color/text_black_dark"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+	    <Button
+	        android:id="@+id/no"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:paddingTop="@dimen/dialog_huodong_guanzhu_buttonText_padding_v"
+	        android:paddingBottom="@dimen/dialog_huodong_guanzhu_buttonText_padding_v"
+	        android:text="不提醒"
+	        android:textSize="16sp"
+	        android:textColor="#828282"
+	        android:gravity="center" 
+	        android:background="@drawable/selector_cover_transparent"/>
+	    
+	    <ImageView 
+	        android:layout_height="fill_parent"
+	        android:layout_width="0.5dp"
+	        android:background="@color/line"/>
+
+	    <Button
+	        android:id="@+id/ok"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:paddingTop="@dimen/dialog_huodong_guanzhu_buttonText_padding_v"
+	        android:paddingBottom="@dimen/dialog_huodong_guanzhu_buttonText_padding_v"
+	        android:text=" 提醒 "
+	        android:textColor="@color/widget_dialog_huodong_guanzhu_button_yes_frame"
+	        android:textSize="16sp"
+	        android:gravity="center" 
+	        android:background="@drawable/selector_cover_transparent"/>
+	    
+	    </LinearLayout>
+
+
+</LinearLayout>

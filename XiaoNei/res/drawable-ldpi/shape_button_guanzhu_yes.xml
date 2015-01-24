@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/widget_dialog_huodong_guanzhu_button_yes_frame"/>
+    <stroke android:color="@color/widget_dialog_huodong_guanzhu_button_yes_frame" android:width="2dp"/>
+    <padding android:top="10dp" android:bottom="10dp"/>
+    <corners android:bottomRightRadius="1dp"/>
+</shape>

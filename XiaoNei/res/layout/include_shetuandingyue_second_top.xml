@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent" >
+    
+    <TextView 
+        android:id="@+id/top_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="@string/shetuandingyue_main_art"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:alpha="10"
+        android:background="@color/shetuandingyue_main_1"/>
+
+</LinearLayout>

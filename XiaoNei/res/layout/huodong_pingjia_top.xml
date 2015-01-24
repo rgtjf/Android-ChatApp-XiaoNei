@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@drawable/selector_cover_transparent" >
+	    <TextView 
+	        android:id="@+id/huodong_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="19sp"
+	        android:text="古典文化定向越野活动"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"/>
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <ImageView 
+	            android:id="@+id/huodong_image"
+	            android:layout_width="120dp"
+	            android:layout_height="150dp"
+	            android:scaleType="centerCrop"/>
+
+
+	        <LinearLayout 
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"
+	            android:orientation="vertical"
+	            android:layout_toRightOf="@+id/huodong_image"
+	            android:layout_alignTop="@+id/huodong_image"
+	            android:layout_alignBottom="@+id/huodong_image"
+	            android:gravity="center">
+	        <TextView
+	            android:id="@+id/huodong_rate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="4.5分"
+	            android:textSize="40sp"
+	            android:textColor="@color/text_black_dark" />
+	        </LinearLayout>
+
+	    </RelativeLayout>
+	    
+	    <ImageView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@color/line"
+	        android:layout_marginTop="12dp"/>
+	</LinearLayout>
+         
+
+</LinearLayout>

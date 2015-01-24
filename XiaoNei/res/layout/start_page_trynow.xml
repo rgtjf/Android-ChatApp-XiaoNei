@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--
+    <RelativeLayout 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/startPage_text_tryNow">
+        
+        <ImageView
+            android:layout_height="@dimen/startPage_logoImage_height"
+            android:layout_width="wrap_content"
+            android:src="@drawable/logo"/>
+        
+    </RelativeLayout>
+    -->
+    
+    <RelativeLayout 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+	    <TextView 
+	        android:id="@+id/text_register"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:gravity="center"
+	        android:textSize="40sp"
+	        android:textColor="#ffffff"
+	        android:text="注册"
+	        android:background="@color/startPage_text_tryNow"/>
+	    <Button 
+            android:id="@+id/register"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_cover_transparent"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/text_tryNow"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/startPage_text_tryNow"
+        android:text="开始体验"
+        android:background="@drawable/selector_cover_transparent"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<include 
+    layout="@layout/include_loading"/>
+
+<RelativeLayout 
+        android:id="@+id/connectSuccessLayout"
+    	android:visibility="invisible"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:focusable="true"  
+   		android:focusableInTouchMode="true">
+     	
+       <com.shoulder.xiaonei.XListView.XListView
+	        android:id="@+id/ListView"  
+	        android:layout_width="match_parent"  
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentTop="true"
+	        android:layout_above="@+id/bottomEdit"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp"
+	        android:divider="@null"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:scrollbarSize="@dimen/widget_scrollbar_width"
+	        android:listSelector="@color/transparent"
+	    	android:scrollbarThumbVertical="@drawable/shape_widget_scollbar"> 
+		</com.shoulder.xiaonei.XListView.XListView>
+		        
+        <include 
+            android:id="@+id/bottomEdit"
+            android:layout_height="@dimen/title_height"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            layout="@layout/include_edit_bottom"/>
+        
+</RelativeLayout>
+
+</FrameLayout>

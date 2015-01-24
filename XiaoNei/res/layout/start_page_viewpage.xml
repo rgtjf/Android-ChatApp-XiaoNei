@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+   <android.support.v4.view.ViewPager  
+	    android:id="@+id/viewPager"  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="match_parent"  
+        android:layout_gravity="center"  
+        android:background="#ffffff"   
+        android:flipInterval="30"  
+        android:persistentDrawingCache="animation" />
+   
+   <LinearLayout 
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:paddingBottom="@dimen/startPage_dot_margin_bottom"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true">
+       
+       <ImageView 
+           android:id="@+id/dot_0"
+           android:layout_height="@dimen/startPage_dot_size"
+           android:layout_width="@dimen/startPage_dot_size"
+           android:background="@drawable/shape_startpage_solid"/>
+       
+       <ImageView 
+           android:id="@+id/dot_1"
+           android:layout_height="@dimen/startPage_dot_size"
+           android:layout_width="@dimen/startPage_dot_size"
+           android:layout_marginLeft="@dimen/startPage_dot_margin_left"
+           android:background="@drawable/shape_startpage_hollow"/>
+       
+       <ImageView 
+           android:id="@+id/dot_2"
+           android:layout_height="@dimen/startPage_dot_size"
+           android:layout_width="@dimen/startPage_dot_size"
+           android:layout_marginLeft="@dimen/startPage_dot_margin_left"
+           android:background="@drawable/shape_startpage_hollow"/>
+       
+       <ImageView 
+           android:id="@+id/dot_3"
+           android:layout_height="@dimen/startPage_dot_size"
+           android:layout_width="@dimen/startPage_dot_size"
+           android:layout_marginLeft="@dimen/startPage_dot_margin_left"
+           android:background="@drawable/shape_startpage_hollow"/>
+       
+       <ImageView 
+           android:id="@+id/dot_4"
+           android:layout_height="@dimen/startPage_dot_size"
+           android:layout_width="@dimen/startPage_dot_size"
+           android:layout_marginLeft="@dimen/startPage_dot_margin_left"
+           android:background="@drawable/shape_startpage_hollow"/>
+       
+       
+   </LinearLayout>
+
+</RelativeLayout>

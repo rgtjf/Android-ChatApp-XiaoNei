@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">社友</string>
+    <string name="tagline">校园活动应有尽有</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="huodong_detail_remain_done">将于活动开始三小时前提醒</string>
+    <string name="login_fail">密码或账号错误</string>
+    <string name="loading_failTOConnect">网络连接失败</string>
+    <string name="tucaoqiang_comment_fabu_editIsNull">空的发不出去啦</string>
+    <string name="tucaoqiang_comment_fabu_hint">说点什么吧</string>
+    <string name="set_up_change_password_editIsNull">请输入密码</string>
+    <string name="set_up_change_phone_editIsNull">请输入手机号码</string>
+    
+    <string name="clue_main_text1">最近没有活动哦</string>
+    <string name="clue_main_text2">试试换个学校吧~</string>
+    <string name="clue_mysubscribe_text1">最近没有订阅的活动哦</string>
+    <string name="clue_mysubscribe_text2">长按我去订阅吧~</string>
+    <string name="clue_myorg_text1">你还没有订阅社团哦</string>
+    <string name="clue_myorg_text2">长按我去订阅吧~</string>
+    <string name="clue_myact_text1">你还没有关注过活动呢</string>
+    <string name="clue_myact_text2">去活动主页看看吧~</string>
+    <string name="clue_mytucao_text1">你还没发过吐槽呢</string>
+    <string name="clue_mytucao_text2">长按我去说点什么吧~</string>
+    <string name="clue_contacts_myFriend_text1">你还没有添加好友啦</string>
+    <string name="clue_contacts_myFriend_text2">去活动聊天室里结识小伙伴吧~</string>
+    <string name="clue_contacts_myShetuan_text1">你还没有关注过活动呢</string>
+    <string name="clue_contacts_myShetuan_text2">去活动主页看看吧~</string>
+    
+    <string name="give_me_five_buttonText">意见与反馈</string>
+    <string name="give_me_five_hint">向我们提意见啦 :)</string>
+    <string name="give_me_five_thanks_word">谢谢您的意见，我们马上改进！</string>
+    
+    <string name="image_HuoDong_download_hasSave">图片已保存</string>
+    <string name="image_HuoDong_download_done">已保存至手机相册</string>
+    
+    <string name="main_titleText_all">所有活动</string>
+    <string name="main_titleText_mySubscribe">订阅活动</string>
+    
+    <string name="main_remain_youCanChangeSchool">左拉菜单可以切换学校</string>
+    <string name="main_clickToGetHistoryActivity">点击查看往期活动</string>
+    
+    <string name="menu_main_buttonText_myZone_logout">登陆/注册</string>
+    <string name="menu_main_buttonText_myZone_login">个人中心</string>
+    <string name="menu_main_buttonText_subscribe">订阅中心</string>
+    <string name="menu_main_buttonText_tucaoqiang">吐槽墙</string>
+    <string name="menu_main_buttonText_contacts">联系人</string>
+    <string name="menu_main_buttonText_changeSchool">切换学校</string>
+    <string name="menu_main_buttonText_setUp">设置</string>
+    
+    <string name="myZone_myActivity_activityIsComing">即将开始</string>
+    <string name="myZone_myActivity_activityIsDone">去评论</string>
+    
+    <string name="noYet_huodongPingJia">暂无评价呢，快来抢一楼吧</string>
+    <string name="noYet_tucaoPingJia">暂无评价呢，快来抢一楼吧</string>
+    <string name="noYet_huodongYuGao">暂时没有新活动</string>
+    <string name="noYet_huodongWangQi">暂时没有往期活动 </string>
+    
+    <string name="push_guanzhu_title">想加你为好友</string>
+    <string name="push_guanzhu_content">点击查看详情</string>
+    
+    <string name="scan_text">请将方框对准社团二维码进行扫描</string>
+    
+    <string name="shetuandingyue_main_science">学术科技</string>
+    <string name="shetuandingyue_main_culture">民俗文化</string>
+    <string name="shetuandingyue_main_outdoor">户外运动</string>
+    <string name="shetuandingyue_main_art">文艺娱乐</string>
+    <string name="shetuandingyue_main_sport">体育健身</string>
+    <string name="shetuandingyue_main_mix">综合实践</string>
+    <string name="shetuandingyue_main_others">其它</string>
+    
+    <string name="shetuandingyue_help_1">订阅社团后可在“订阅活动”中看到社团的活动更新</string>
+    <string name="shetuandingyue_help_2">社团总评分=社团活动的平均分</string>
+    <string name="shetuandingyue_help_3">你喜欢哪一类的社团呢？</string>
+    <string name="shetuandingyue_help_4">暂时没有社团男女比例的信息</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="xlistview_header_hint_normal_oldActivity">下拉加载更多</string>
+    <string name="xlistview_header_hint_ready_oldActivity">松开加载数据</string>
+    
+    <string name="zone_button_letUsChat">开始聊天</string>
+    <string name="zone_leanCloud_guanzhu_fail">尚未注册该成员</string>
+    <string name="yourZone_guanzhu_fail">网络可能异常了..</string>
+    <string name="yourZone_guanzhu_success">已发送请求</string>
+    
+    
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="@dimen/chat_group_member_padding_thin"
+    android:paddingBottom="@dimen/chat_group_member_padding_thin">
+    
+    <ImageView 
+        android:id="@+id/chat_group_member_image"
+        android:layout_height="@dimen/chat_group_member_image_size"
+        android:layout_width="@dimen/chat_group_member_image_size"
+        android:src="@drawable/test_1"
+        android:scaleType="centerCrop"/>
+    
+    <TextView 
+        android:id="@+id/chat_group_member_text"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/chat_group_member_image_size"
+        android:paddingLeft="@dimen/chat_group_member_text_padding_h"
+        android:paddingRight="@dimen/chat_group_member_text_padding_h"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/chat_group_member_padding_textAndImage"
+        android:text="泡椒稻蛙"
+        android:textSize="@dimen/chat_group_member_text_size"
+        android:textColor="@color/text_gray_dark"
+        android:ellipsize="end"
+        android:lines="1"/>
+
+</LinearLayout>

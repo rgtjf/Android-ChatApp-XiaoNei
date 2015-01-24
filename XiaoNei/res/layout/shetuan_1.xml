@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shoulder.xiaonei.myClass_myView.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:scrollbars="none" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true">
+       
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#BE3C15" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="组织介绍"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/Page1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:padding="0.1dp"
+            android:src="@drawable/shetuan_detail_one" 
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+     	
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="0.5dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:background="#e5e5e5" />
+            <LinearLayout
+                android:id="@+id/shetuan_zongpingfen"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@+id/line2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/line2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/selector_cover_transparent" >
+                <TextView
+                    android:id="@+id/shetuan_zongpingfen_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4.5"
+                    android:textColor="#4B4B4B"
+                    android:textSize="50sp" />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="活动总评分"
+                    android:textColor="#B5B5B5" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/shetuan_fensishu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@+id/line2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/line2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/selector_cover_transparent" >
+                <TextView
+                    android:id="@+id/shetuan_fensishu_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="200"
+                    android:textColor="#4B4B4B"
+                    android:textSize="50sp" />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="粉丝数"
+                    android:textColor="#B5B5B5" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp">
+             <TextView
+                 android:id="@+id/name"
+                 android:layout_toLeftOf="@+id/logo"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:text="河北大学武术协会"
+                 android:textSize="24sp" />
+             <ImageButton
+                 android:id="@+id/logo"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 android:layout_alignParentRight="true"
+                 android:scaleType="centerCrop"
+                 android:background="@drawable/shape_widget_logo_frame"
+                 android:padding="0.1dp"
+                 />
+        </RelativeLayout>
+
+        
+        <TextView 
+                 android:id="@+id/introduce"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="20dp"
+                 style="@style/font_middle_content"/>
+        
+        <Button 
+            android:id="@+id/dingyue"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/shetuan_detail_1_button_margin_top"
+            android:layout_marginBottom="@dimen/shetuan_detail_1_button_margin_bottom"
+            android:layout_marginLeft="@dimen/shetuan_detail_1_button_margin_h"
+            android:layout_marginRight="@dimen/shetuan_detail_1_button_margin_h"
+            android:paddingTop="@dimen/shetuan_detail_1_button_text_padding_v"
+            android:paddingBottom="@dimen/shetuan_detail_1_button_text_padding_v"
+            android:textSize="@dimen/shetuan_detail_1_button_text"
+            android:text="订阅"
+            android:textColor="@color/shetuan_1_button_text_dingyue"
+            android:background="@drawable/select_shetuan1_button_subscribe"/>
+        
+        
+     </LinearLayout>
+        
+    
+</com.shoulder.xiaonei.myClass_myView.MyScrollView>

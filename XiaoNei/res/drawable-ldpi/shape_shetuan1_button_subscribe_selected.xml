@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	<corners android:radius="@dimen/shetuan_detail_1_button_radius"/>
+	<stroke android:width="@dimen/shetuan_detail_1_button_stroke" android:color="@color/shetuan_1_button_dingyue"/>
+	<solid android:color="@color/selector"></solid>
+</shape>

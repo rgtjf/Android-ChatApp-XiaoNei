@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<include 
+    layout="@layout/include_loading"/>
+
+<com.shoulder.xiaonei.myClass_myView.MyScrollView 
+    android:id="@+id/connectSuccessLayout"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/main_background" 
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@color/main_background"
+    	android:paddingTop="10dp"
+    	android:paddingBottom="20dp"
+    	android:fillViewport="true" >
+      
+    	<RelativeLayout 
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="fill_parent"
+    	    android:background="#ffffff">
+    	    
+    	    <TextView
+    	            android:id="@+id/name"
+    	            android:layout_width="fill_parent"
+    	            android:layout_height="wrap_content"
+    	            android:text="艾草音乐节"
+    	            android:textColor="@color/text_black_light"
+    	            android:textSize="18dp"
+    	            android:layout_marginTop="5dp"
+    	            android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+    	            android:layout_marginRight="10dp" />
+    	    
+	    	    <RelativeLayout
+	    	        android:id="@+id/linear"
+	    	        android:layout_below="@+id/name"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_marginTop="5dp"
+			    	android:layout_marginBottom="8dp">
+	    	        
+			    	    <ImageView
+			    	        android:id="@+id/image_view"
+			    	        android:layout_height="@dimen/huodong_detail_image_height"
+			    	        android:layout_width="@dimen/huodong_detail_image_width"
+			    	        android:scaleType="centerCrop"
+			    	   	 	android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+			    	   	 	/>
+			    	    <Button 
+			    	        android:id="@+id/image_button"
+			    	        android:layout_height="@dimen/huodong_detail_image_height"
+			    	        android:layout_width="@dimen/huodong_detail_image_width"
+			    	        android:background="@drawable/selector_cover_transparent"
+			    	        android:layout_alignTop="@+id/image_view"
+			    	        android:layout_alignBottom="@+id/image_view"
+			    	        android:layout_alignLeft="@+id/image_view"
+			    	        android:layout_alignRight="@+id/image_view"/>
+			    	    
+			    </RelativeLayout>
+			    	    
+			   	<LinearLayout 
+			   	      android:layout_height="@dimen/huodong_detail_image_height"
+			   	      android:layout_width="match_parent"
+			   	      android:orientation="vertical"
+			   	      android:gravity="bottom"
+			   	      android:layout_toRightOf="@+id/linear"
+			   	      android:layout_alignTop="@+id/linear"
+			   	      android:layout_marginLeft="10dp"
+			   	      android:layout_marginRight="20dp">
+			    	    
+			   	  <RelativeLayout 
+			   	      android:layout_height="wrap_content"
+			   	      android:layout_width="wrap_content"
+			   	      android:visibility="invisible"
+			   	      android:layout_marginBottom="@dimen/huodong_detail_information_text_padding_v">
+			   	      
+			   	      <ImageView 
+			   	          android:id="@+id/image_girlCount"
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_marginBottom="@dimen/huodong_detail_information_text_padding_v"
+			   	          android:src="@drawable/girlcount"/>
+			   	      <TextView 
+			   	          android:id="@+id/girlCount"
+			   	          android:layout_toRightOf="@+id/image_girlCount"
+			   	          android:layout_alignBottom="@+id/image_girlCount"
+			   	          android:layout_height="wrap_content"
+			   	          android:layout_width="wrap_content"
+			   	          android:textSize="@dimen/huodong_detail_information_text_size"
+			   	          android:text="13人"/>
+			   	      
+			   	      <ImageView 
+			   	          android:id="@+id/image_boyCount"
+			   	          android:layout_below="@+id/image_girlCount"
+			   	          android:layout_alignLeft="@+id/image_girlCount"
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:src="@drawable/boycount"/>	
+			   	      <TextView 
+			   	          android:id="@+id/boyCount"
+			   	          android:layout_below="@+id/girlCount"
+			   	          android:layout_alignLeft="@+id/girlCount"
+			   	          android:layout_alignBottom="@+id/image_boyCount"
+			   	          android:layout_height="wrap_content"
+			   	          android:layout_width="wrap_content"
+			   	          android:gravity="bottom"
+			   	          android:textSize="@dimen/huodong_detail_information_text_size"
+			   	          android:text="26人"/>		  
+			   	  </RelativeLayout>
+			    	    
+			   	  <LinearLayout 
+			   	      android:layout_height="wrap_content"
+			   	      android:layout_width="match_parent"
+			   	      android:orientation="horizontal"
+			   	      android:layout_marginBottom="@dimen/huodong_detail_information_text_padding_v"
+			   	      android:gravity="bottom">
+			   	      <ImageView 
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_gravity="top"
+			   	          android:src="@drawable/address"/>
+				   	  <TextView
+				   	      android:id="@+id/address"
+				   	      android:layout_width="fill_parent"
+				   	      android:layout_height="wrap_content"
+				   	      android:gravity="bottom"
+				   	      android:layout_marginLeft="@dimen/huodong_detail_information_text_padding_left"
+				   	      android:text="法商楼 233"
+				   	      android:textColor="@color/text_gray_dark"
+				   	      android:textSize="@dimen/huodong_detail_information_text_size" />
+			   	  </LinearLayout>
+			      
+			   	  <LinearLayout 
+			   	      android:layout_height="wrap_content"
+			   	      android:layout_width="match_parent"
+			   	      android:orientation="horizontal"
+			   	      android:gravity="bottom">
+			   	      <ImageView 
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_gravity="top"
+			   	          android:src="@drawable/time"/>
+		    	      <TextView
+		    	            android:id="@+id/time"
+		    	            android:layout_width="fill_parent"
+		    	            android:layout_height="wrap_content"
+		    	            android:layout_marginLeft="@dimen/huodong_detail_information_text_padding_left"
+		    	            android:text="8-1 周五 6:00~22:00"
+		    	            android:textColor="@color/text_gray_dark"
+		    	            android:textSize="@dimen/huodong_detail_information_text_size" />
+		    	    </LinearLayout>
+	    	       
+	    	  </LinearLayout>
+	    	       
+            <ImageView 
+                android:id="@+id/line"
+                android:layout_below="@+id/linear"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"
+                android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+                android:layout_marginRight="@dimen/huodong_detail_all_padding_left"/>
+            
+            <LinearLayout 
+                android:layout_below="@+id/line"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_alignLeft="@+id/line"
+                android:layout_alignRight="@+id/line"
+                android:orientation="horizontal"
+                >
+			   	  
+               <RelativeLayout 
+                   android:layout_width="0dp"
+    	           android:layout_height="@dimen/huodong_detail_baoming_height"
+    	           android:layout_weight="1">
+                   
+                   <ImageView 
+                       android:id="@+id/image_boyCount"
+                       android:layout_width="20dp"
+    	               android:layout_height="20dp"
+    	               android:layout_alignParentLeft="true"
+    	               android:layout_centerVertical="true"
+    	               android:src="@drawable/boycount"/>
+                   
+                   <TextView
+    	               android:id="@+id/text_boyCount"
+    	               android:layout_width="wrap_content"
+    	               android:layout_height="28dp"
+    	               android:layout_centerVertical="true"
+    	               android:layout_marginLeft="8dp"
+    	               android:layout_toRightOf="@+id/image_boyCount"
+    	               android:gravity="center_vertical"
+    	               android:textColor="@color/text_black_light"
+    	               android:text="/"
+    	               android:textSize="15dp" />
+                   
+               </RelativeLayout>
+               
+               <RelativeLayout 
+                   android:layout_width="0dp"
+    	           android:layout_height="@dimen/huodong_detail_baoming_height"
+    	           android:layout_weight="1"
+    	           android:gravity="center">
+                   
+                   <ImageView 
+                       android:id="@+id/image_girlCount"
+                       android:layout_width="20dp"
+    	               android:layout_height="20dp"
+    	               android:layout_alignParentLeft="true"
+    	               android:layout_centerVertical="true"
+    	               android:src="@drawable/girlcount"/>
+                   
+                   <TextView
+    	               android:id="@+id/text_girlCount"
+    	               android:layout_width="wrap_content"
+    	               android:layout_height="28dp"
+    	               android:layout_centerVertical="true"
+    	               android:layout_marginLeft="8dp"
+    	               android:layout_toRightOf="@+id/image_girlCount"
+    	               android:gravity="center_vertical"
+    	               android:textColor="@color/text_black_light"
+    	               android:text="/"
+    	               android:textSize="15dp" />
+                   
+               </RelativeLayout>
+
+    	       <RelativeLayout
+    	           android:id="@+id/guanzhu"
+    	           android:layout_width="0dp"
+    	           android:layout_height="@dimen/huodong_detail_baoming_height"
+    	           android:layout_weight="1"
+    	           android:gravity="center">
+
+    	           <TextView
+    	               android:id="@+id/guanzhu_text"
+    	               android:layout_width="wrap_content"
+    	               android:layout_height="28dp"
+    	               android:layout_centerVertical="true"
+    	               android:gravity="center_vertical"
+    	               android:textColor="@color/text_blue_dark"
+    	               android:text="关注"
+    	               android:textSize="16dp" />
+
+    	       </RelativeLayout>
+
+         	   </LinearLayout>
+
+    	</RelativeLayout>
+    	
+    	
+    	    <RelativeLayout 
+    		    android:id="@+id/linearLaout_huodong_chat"
+    		    android:layout_height="wrap_content"
+    		    android:layout_width="match_parent"
+    		    android:layout_marginTop="@dimen/huodong_detail_space_v"
+    		    android:background="@drawable/selector_white_light">
+            
+    		    <ImageView 
+	         	    android:id="@+id/huodong_stripe_chat"
+	                android:layout_width="@dimen/huodong_detail_stripe_width"
+	                android:layout_height="@dimen/huodong_detail_org_height"
+	                android:background="@color/transparent"/>
+    		    <TextView
+	         	    android:id="@+id/text_huodong_chat"
+	         	    android:layout_width="wrap_content"
+	         	    android:layout_height="wrap_content"
+	         	    android:layout_toRightOf="@+id/huodong_stripe_chat"
+	         	    android:layout_centerVertical="true"
+	         	    android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+	         	    android:text="活动讨论区 "
+	         	    android:textColor="@color/text_gray_light"
+	         	    android:textSize="18sp" />
+            </RelativeLayout>
+                 <ImageView 
+                    android:layout_height="@dimen/huodong_detail_shadow_height"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/widget_shadow_top_to_bottom"/>
+    	
+
+            <RelativeLayout
+                android:id="@+id/linearlayout_org"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/huodong_detail_space_v"
+                android:background="#ffffff"
+                >
+         	<ImageView 
+         	    android:id="@+id/huodong_stripe"
+                android:layout_width="@dimen/huodong_detail_stripe_width"
+                android:layout_height="@dimen/huodong_detail_org_height"
+                android:background="#CF7131"/>
+
+         	<TextView
+         	    android:id="@+id/text_org"
+         	    android:layout_toRightOf="@+id/huodong_stripe"
+         	    android:layout_width="wrap_content"
+         	    android:layout_height="wrap_content"
+         	    android:layout_centerVertical="true"
+         	    android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+         	    android:text="主办方 ： "
+         	    android:textColor="@color/text_gray_light"
+         	    android:textSize="18sp" />
+
+            <TextView 
+                android:id="@+id/who"
+                android:layout_toRightOf="@+id/text_org"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+            
+        </RelativeLayout>
+        <ImageView 
+                   android:layout_height="@dimen/huodong_detail_shadow_height"
+                   android:layout_width="match_parent"
+                   android:layout_alignParentBottom="true"
+                   android:background="@drawable/widget_shadow_top_to_bottom"/>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/huodong_detail_space_v"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="45dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动详情:"
+                android:textColor="@color/text_gray_light"
+                android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+                android:textSize="18sp" />
+
+            <TextView 
+                android:id="@+id/content"
+                android:layout_marginTop="12dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/huodong_detail_all_padding_left"
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:text="等待数据中"
+                />
+            </LinearLayout>
+            <ImageView 
+                   android:layout_height="@dimen/huodong_detail_shadow_height"
+                   android:layout_width="match_parent"
+                   android:layout_alignParentBottom="true"
+                   android:background="@drawable/widget_shadow_top_to_bottom"/>
+            
+    
+
+</LinearLayout>
+    
+
+</com.shoulder.xiaonei.myClass_myView.MyScrollView>
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background" >
+    
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/main_background">
+    
+    <TextView 
+        android:id="@+id/advice_textView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/setUp_giveMeFive_Paper_padding_h"
+        android:layout_marginRight="@dimen/setUp_giveMeFive_Paper_padding_h"
+        android:layout_marginTop="@dimen/setUp_giveMeFive_Paper_padding_v"
+        android:layout_marginBottom="@dimen/setUp_giveMeFive_text_padding_bottom"
+        android:gravity="left|top"
+        android:paddingLeft="@dimen/setUp_giveMeFive_text_padding_h"
+        android:paddingRight="@dimen/setUp_giveMeFive_text_padding_h"
+        android:paddingTop="@dimen/setUp_giveMeFive_text_padding_v"
+        android:paddingBottom="@dimen/setUp_giveMeFive_text_padding_v"
+        android:textSize="@dimen/setUp_giveMeFive_text_size"
+        android:textColor="@color/text_black_light"
+        android:background="@color/main_background"/>
+    
+    <EditText 
+        android:id="@+id/advice_editText"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/setUp_giveMeFive_Paper_padding_h"
+        android:layout_marginRight="@dimen/setUp_giveMeFive_Paper_padding_h"
+        android:layout_marginTop="@dimen/setUp_giveMeFive_Paper_padding_v"
+        android:layout_marginBottom="@dimen/setUp_giveMeFive_text_padding_bottom"
+        android:gravity="left|top"
+        android:paddingLeft="@dimen/setUp_giveMeFive_text_padding_h"
+        android:paddingRight="@dimen/setUp_giveMeFive_text_padding_h"
+        android:paddingTop="@dimen/setUp_giveMeFive_text_padding_v"
+        android:paddingBottom="@dimen/setUp_giveMeFive_text_padding_v"
+        android:hint="@string/give_me_five_hint"
+        android:textSize="@dimen/setUp_giveMeFive_text_size"
+        android:background="#ffffff">
+    	<requestFocus/>
+    </EditText>
+    
+	</RelativeLayout>
+	
+    <View 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent"/>
+</LinearLayout>

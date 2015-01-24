@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@color/chat_background">
+    
+    	<include 
+    	    android:id="@+id/title"
+    	    layout="@layout/title2model"
+    	    android:layout_height="@dimen/title_height"
+    	    android:layout_width="match_parent"
+    	    />
+    
+	    <com.shoulder.xiaonei.XListView.XListView
+	        android:id="@+id/chat_listView"  
+	        android:layout_width="match_parent"  
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/title"
+	        android:layout_marginBottom="@dimen/title_height"
+	        android:divider="@null"
+	        android:listSelector="@null"
+	        android:stackFromBottom="true"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:scrollbarSize="@dimen/widget_scrollbar_width"
+	        android:scrollbarThumbVertical="@drawable/shape_widget_scollbar" >  
+	   	</com.shoulder.xiaonei.XListView.XListView>
+   	
+    <include 
+        android:id="@+id/chat_bottom"
+        android:layout_height="@dimen/title_height"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/include_chat_bottom"/>
+
+</RelativeLayout>

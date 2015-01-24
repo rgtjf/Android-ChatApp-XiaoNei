@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_main_others_padding_top">0dp</dimen>
+    <dimen name="menu_main_bottom_height">10dp</dimen>
+    <dimen name="menu_main_setUp_text_padding_bottom">5dp</dimen>
+</resources>

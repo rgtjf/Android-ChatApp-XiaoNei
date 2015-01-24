@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shoulder.xiaonei.myClass_myView.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="#ffffff">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <include 
+        layout="@layout/shetuan3_top"/>
+    
+    <FrameLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    
+    <include 
+        android:id="@+id/notYet"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        layout="@layout/include_notyet"/>
+        
+    <LinearLayout
+        android:id="@+id/Yet"
+        android:visibility="visible"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:paddingLeft="@dimen/shetuan_detail_3_allContent_padding_left"
+	    android:paddingRight="@dimen/shetuan_detail_3_allContent_padding_left" >
+    <TextView 
+        android:id="@+id/huodong_name"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="古典文化定向越野活动"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout 
+        android:id="@+id/linear_YuGao"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/huodong_image"
+            android:layout_height="@dimen/shetuan_detail_3_image_height"
+            android:layout_width="@dimen/shetuan_detail_3_image_width"
+            android:scaleType="centerCrop"/>
+        <LinearLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+            
+            	<LinearLayout 
+			   	      android:layout_height="wrap_content"
+			   	      android:layout_width="match_parent"
+			   	      android:orientation="horizontal"
+			   	      android:layout_marginBottom="@dimen/huodong_detail_information_text_padding_v"
+			   	      android:gravity="bottom">
+			   	      <ImageView 
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_gravity="top"
+			   	          android:src="@drawable/address"/>
+		            <TextView 
+		                android:id="@+id/huodong_address"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+				   	    android:layout_marginLeft="@dimen/huodong_detail_information_text_padding_left"
+				   	    android:gravity="bottom"
+		                android:text="北京今日美术馆1楼6栋零"
+		                android:textColor="@color/shetuan_3_text"/>
+		        </LinearLayout>
+		         
+            	<LinearLayout 
+			   	      android:layout_height="wrap_content"
+			   	      android:layout_width="match_parent"
+			   	      android:orientation="horizontal"
+			   	      android:gravity="bottom">
+			   	      <ImageView 
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_gravity="top"
+			   	          android:src="@drawable/time"/>
+			          <TextView 
+			                android:id="@+id/huodong_time"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginLeft="@dimen/huodong_detail_information_text_padding_left"
+			                android:gravity="top"
+			                android:text="8-1 周五 6:00~22:00"
+			                android:textColor="@color/shetuan_3_text"/>
+			     </LinearLayout>
+			      
+            	 <LinearLayout 
+			   	      android:layout_height="wrap_content"
+			   	      android:layout_width="match_parent"
+			   	      android:orientation="horizontal"
+			   	      android:gravity="bottom">
+			   	      <ImageView 
+			   	          android:layout_height="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_width="@dimen/huodong_detail_sexImage_size"
+			   	          android:layout_gravity="bottom"
+			   	          android:src="@drawable/eye"/>
+			   	      <TextView 
+		                  android:id="@+id/huodong_guanzhu_count"
+		                  android:layout_width="fill_parent"
+		                  android:layout_height="wrap_content"
+		                  android:layout_marginLeft="@dimen/huodong_detail_information_text_padding_left"
+			              android:gravity="top"
+		                  android:paddingTop="@dimen/shetuan_detail_3_text_padding_v"
+		                  android:text="23人已关注"
+		                  android:textColor="@color/shetuan_3_text"/>
+			   	  </LinearLayout>
+			       
+            <TextView 
+                android:id="@+id/function_guanzhu"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/huodong_detail_sexImage_size"
+                android:layout_marginLeft="@dimen/huodong_detail_information_text_padding_left"
+                android:gravity="center_vertical"
+                android:text="关注"
+                android:textColor="@color/shetuan_3_text_guanzhu"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/line"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_marginTop="@dimen/shetuan_detail_3_line_padding_v"
+        android:layout_marginBottom="@dimen/shetuan_detail_3_line_padding_v"/>
+    
+    <TextView 
+        android:id="@+id/huodong_content"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/shetuan_detail_3_content_padding_h"
+        android:paddingRight="@dimen/shetuan_detail_3_content_padding_h"
+        android:textColor="@color/text_black_dark"
+        android:textSize="16sp"/>
+    
+
+</LinearLayout>
+</FrameLayout>
+        
+
+</LinearLayout>
+</com.shoulder.xiaonei.myClass_myView.MyScrollView>

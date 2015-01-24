@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    
+   <RelativeLayout 
+        android:id="@+id/myCard"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#ffffff">
+       
+       <RelativeLayout
+    	    android:id="@+id/logo_linear"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:paddingTop="@dimen/shetuandingyue_second_logo_margin_v"
+    	    android:paddingBottom="@dimen/shetuandingyue_second_logo_margin_v"
+	        android:layout_alignParentLeft="true">
+       <ImageView 
+           android:id="@+id/logo"
+           android:layout_height="@dimen/shetuandignyue_second_logo_size"
+           android:layout_width="@dimen/shetuandignyue_second_logo_size"
+           android:layout_marginLeft="@dimen/shetuandingyue_second_logo_margin_h"
+           android:background="#ffffff"
+           android:scaleType="centerCrop"/>
+       </RelativeLayout>
+       
+       <TextView 
+           android:id="@+id/org_name"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:layout_toRightOf="@+id/logo_linear"
+           android:layout_toLeftOf="@+id/dingyue"
+           android:layout_marginTop="@dimen/shetuandingyue_second_logo_margin_v"
+           android:layout_marginLeft="@dimen/shetuandingyue_second_textOrg_padding_left"
+           android:textColor="@color/text_black_dark"
+           android:textSize="18sp"
+           android:text="自行车协会"
+           android:ellipsize="end"/>
+       
+	    <TextView 
+	        android:id="@+id/org_mark"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_alignLeft="@+id/org_name"
+	        android:layout_below="@+id/org_name"
+	        android:layout_toLeftOf="@+id/dingyue"
+	        android:layout_marginTop="4dp"
+	        android:text="4.5分"
+	        android:textSize="16sp"
+	        android:textColor="#A9A9A9"/>
+	    
+ 	   <ImageView
+		   android:id="@+id/Card_select"
+	       android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/logo_linear"
+           android:layout_alignBottom="@+id/logo_linear"
+		   android:focusable = "false"
+		   android:background="@drawable/selector_cover_transparent"/>
+ 	   
+ 	   <RelativeLayout
+	        android:id="@+id/dingyue"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/org_name"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:paddingRight="@dimen/shetuandingyue_second_functionRelativeLayout_padding_right"
+            android:gravity="center_vertical">
+       
+ 	       	<TextView 
+			    android:id="@+id/dingyue_text"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="关注"
+	            android:textSize="16dp"/>
+       	
+       	<!-- 
+			<ImageView 
+			    android:id="@+id/dingyue_image"
+			    android:layout_height="@dimen/shetuandingyue_second_functionImage_height"
+			    android:layout_width="wrap_content"
+			    android:src="@drawable/shetuan_dingyue_0"/>
+		-->
+			    
+		</RelativeLayout>
+			
+ 	   
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="0.7dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/widget_shadow_top_to_bottom"/>
+
+</RelativeLayout>

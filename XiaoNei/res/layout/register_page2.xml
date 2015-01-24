@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0EC"
+    android:orientation="vertical"
+    android:paddingRight="10dp" >
+    
+    <RelativeLayout 
+         android:layout_alignParentLeft="true"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         >
+    <ImageView  
+        android:layout_width="29dp"  
+        android:layout_height="fill_parent"
+        android:src="@drawable/back"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="7dp"
+        android:layout_centerVertical="true"  
+        />  
+     <Button
+          android:id="@+id/left_btn" 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@drawable/selector_cover_transparent"/>
+     </RelativeLayout>  
+     
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0EC"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+     
+     <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/temp_06"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/register_padding_v"
+        	android:paddingBottom="@dimen/register_padding_v"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="手机号码"/>
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/temp_06"
+        android:paddingTop="@dimen/register_padding_v"
+        android:paddingBottom="@dimen/register_padding_v"
+        android:ems="20"
+        android:hint="请输入手机号码"
+        android:background="@null"
+        android:inputType="phone"
+        android:textSize="15sp" 
+        android:lines="2"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/temp_03"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/register_padding_v"
+        	android:paddingBottom="@dimen/register_padding_v"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="密码        "/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/temp_03"
+        android:paddingTop="@dimen/register_padding_v"
+        android:paddingBottom="@dimen/register_padding_v"
+        android:ems="10"
+        android:hint="请输入密码.."
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/temp_04"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/register_padding_v"
+        	android:paddingBottom="@dimen/register_padding_v"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="确认密码"/>
+    <EditText
+        android:id="@+id/password_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/temp_04"
+        android:paddingTop="@dimen/register_padding_v"
+        android:paddingBottom="@dimen/register_padding_v"
+        android:ems="10"
+        android:hint="请再次输入密码.."
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/temp_03"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/register_padding_v"
+        	android:paddingBottom="@dimen/register_padding_v"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="验证码    "/>
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/temp_03"
+        android:paddingTop="@dimen/register_padding_v"
+        android:paddingBottom="@dimen/register_padding_v"
+        android:ems="10"
+        android:hint="请输入收到的验证码.."
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+    </RelativeLayout>
+    
+           
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#EF6E7E"
+        android:gravity="center"
+        android:text="完成注册"
+        android:textColor="#ffffff"/>
+    
+
+</LinearLayout>

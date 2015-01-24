@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+    
+    <ImageView 
+        android:id="@+id/line"
+        android:background="@color/transparent"
+        android:layout_height="4dp"
+        android:layout_width="fill_parent"/>
+    
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/mytucao_textContent_padding_top"
+        android:paddingBottom="@dimen/mytucao_textContent_padding_bottom"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="怕油烟就不要进厨房，怕傻逼就不要来世上"
+        android:textColor="@color/text_black_dark"
+        android:textSize="18sp"/>
+    
+    <TextView 
+        android:id="@+id/count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:paddingBottom="@dimen/mytucao_textCount_padding_bottom"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="123"
+        android:textSize="15sp"
+        android:textColor="#00B0FF"/>
+    
+    <Button 
+        android:id="@+id/more"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_alignTop="@+id/content"
+        android:layout_alignBottom="@+id/count"
+        android:focusable="false"
+        android:background="@drawable/selector_cover_transparent"/>
+    
+    <ImageView 
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/widget_shadow_top_to_bottom"/>
+    
+    
+</RelativeLayout>

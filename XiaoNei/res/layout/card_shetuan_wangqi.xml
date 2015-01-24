@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+    	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/dialog_mytucao_delete_line_height_thin"
+	    android:background="@color/line"/>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_cover_transparent" >
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/huodong_wangqi_width"
+        android:layout_height="@dimen/huodong_wangqi_height"
+        android:scaleType="centerCrop"/>
+    <TextView 
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text_black_dark"/>
+    <TextView 
+        android:id="@+id/evaluation"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="#7F7F7F"/>
+    
+    	     <ImageView
+		        android:id="@+id/myCard"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignTop="@+id/image"
+		        android:layout_alignBottom="@+id/image"
+		        android:focusable="true"
+		        android:clickable="true"
+		        android:background="@drawable/selector_cover_transparent"/>
+
+</RelativeLayout>
+
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dp"
+	    android:background="@color/line"/>
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="12dp"
+	    android:background="#ffffff"/>
+
+</LinearLayout>

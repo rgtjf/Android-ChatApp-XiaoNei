@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/menu_main_others_padding_top">
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+                android:text="校园生活"
+                android:textSize="28sp"
+                android:textColor="@color/menu_main"/>
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/menu_main_all_paddingRight"
+                android:src="@drawable/menu_main_school"
+                />
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/menu_main_all_paddingLeft"
+            android:layout_marginRight="@dimen/menu_main_all_paddingRight"
+            android:background="@color/menu_main"
+            android:layout_marginTop="3dp"/>
+        
+        <Button 
+            android:id="@+id/myZone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+            android:paddingRight="@dimen/menu_main_all_paddingRight"
+            android:text="登陆/注册"
+            android:textColor="@color/menu_main_character"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:background="@drawable/selector_cover_transparent"
+            />
+        
+        <Button 
+            android:id="@+id/shetuan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+            android:paddingRight="@dimen/menu_main_all_paddingRight"
+            android:text="订阅中心"
+            android:textColor="#65C8FF"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:background="@drawable/selector_cover_transparent"
+            />
+        
+         <Button 
+            android:id="@+id/tucaoqiang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+            android:paddingRight="@dimen/menu_main_all_paddingRight"
+            android:text="吐槽墙"
+            android:textColor="@color/menu_main_character"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:background="@drawable/selector_cover_transparent"
+            />
+         
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear1"
+        android:layout_above="@+id/img_bottom"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom">
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_main_others_padding_top"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/title_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+                android:text="其它"
+                android:textColor="@color/menu_main"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/title_text_2"
+            	android:paddingRight="@dimen/menu_main_all_paddingRight"
+                android:src="@drawable/menu_main_other" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="@dimen/menu_main_all_paddingLeft"
+            android:layout_marginRight="@dimen/menu_main_all_paddingRight"
+            android:background="@color/menu_main" />
+
+        <Button
+            android:id="@+id/change_school"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+            android:paddingRight="@dimen/menu_main_all_paddingRight"
+            android:background="@drawable/selector_cover_transparent"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="切换学校"
+            android:textColor="@color/menu_main_character"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/set_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/menu_main_all_paddingLeft"
+            android:paddingRight="@dimen/menu_main_all_paddingRight"
+            android:background="@drawable/selector_cover_transparent"
+            android:gravity="left"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="设置"
+            android:textColor="@color/menu_main_character"
+            android:textSize="20sp" />
+        
+    </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView 
+	        android:id="@+id/img_bottom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/menu_main_bottom_height"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/titleColor"/>
+    
+
+</RelativeLayout>

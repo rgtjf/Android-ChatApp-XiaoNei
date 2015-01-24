@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_toRightOf="@+id/image_linear"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/myact_image_padding_v"
+        android:layout_marginRight="@dimen/myZone_all_padding_right"
+        android:layout_marginLeft="@dimen/myact_text_padding_image_left"
+        android:text="莫西子詩 首張專輯《原野》首發巡演"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="17sp"/>
+    
+    <LinearLayout 
+        android:id="@+id/address_linear"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_toRightOf="@+id/image_linear"
+	    android:layout_alignLeft="@+id/name"
+	    android:layout_above="@+id/time_linear"
+	    android:layout_marginBottom="@dimen/myact_text_padding_top"
+	    android:layout_marginRight="@dimen/myZone_all_padding_right"
+		android:orientation="horizontal"
+		android:gravity="bottom">
+		<ImageView 
+			android:layout_height="@dimen/myact_icon_size"
+			android:layout_width="@dimen/myact_icon_size"
+			android:layout_gravity="top"
+			android:src="@drawable/address"/>
+	    <TextView
+	        android:id="@+id/address"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:paddingLeft="@dimen/myact_text_paading_icon_left"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:textSize="13sp"
+	        android:text="北京麻雀瓦舍 南京APE 杭州木馬 寧波CMK"
+	        android:textColor="#A4A5A4"/>
+	</LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/time_linear"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_toRightOf="@+id/image_linear"
+	    android:layout_alignLeft="@+id/name"
+	    android:layout_above="@+id/text_line"
+	    android:layout_marginRight="@dimen/myZone_all_padding_right"
+		android:gravity="bottom">
+	    <ImageView 
+			android:layout_height="@dimen/huodong_detail_sexImage_size"
+			android:layout_width="@dimen/huodong_detail_sexImage_size"
+			android:layout_gravity="top"
+			android:src="@drawable/time"/>
+	    <TextView 
+	        android:id="@+id/time"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:paddingLeft="@dimen/myact_text_paading_icon_left"
+	        android:text="8-1 周五 6:00~22:00"
+	        android:textSize="13sp"
+	        android:textColor="#A4A5A4"/>
+	</LinearLayout>
+	
+    <ImageView 
+        android:id="@+id/text_line"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/goToEvaluate"
+        android:layout_marginTop="@dimen/myact_text_padding_top"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginRight="@dimen/myact_text_padding_image_left"
+        android:background="@color/line"/>
+
+    <LinearLayout 
+        android:id="@+id/image_linear"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="@dimen/myZone_all_padding_left"
+        android:orientation="vertical">
+	    <ImageView
+	        android:id="@+id/image"
+	        android:layout_width="@dimen/myact_image_width"
+	        android:layout_height="@dimen/myact_image_height"
+	        android:layout_marginTop="@dimen/myact_image_padding_v"
+	        android:layout_marginBottom="@dimen/myact_image_padding_v"
+	        android:background="@color/fill_color"
+	        android:scaleType="centerCrop" />
+	</LinearLayout>
+	
+	 <ImageView
+		    android:id="@+id/myCard"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignTop="@+id/image_linear"
+		    android:layout_alignBottom="@+id/image_linear"
+		    android:focusable = "false"
+		    android:background="@drawable/selector_cover_transparent"/>
+	 
+	 <Button 
+	     android:id="@+id/goToEvaluate"
+	     android:layout_height="wrap_content"
+	     android:layout_width="match_parent"
+	     android:layout_alignBottom="@+id/image_linear"
+	     android:layout_marginTop="@dimen/myact_text_padding_top"
+	     android:paddingBottom="@dimen/myact_image_padding_v"
+	     android:focusable="true"
+	     android:gravity="left"
+	     android:text="@string/myZone_myActivity_activityIsDone"
+	     android:textColor="@color/text_gray_clue"
+	     android:textSize="18sp"
+	     android:layout_alignLeft="@+id/name"
+	     android:background="@null"/>
+	 
+    
+    <ImageView 
+        android:layout_height="@dimen/myZone_line_height"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/widget_shadow_top_to_bottom"/>
+
+</RelativeLayout>

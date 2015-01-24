@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/changeSomething"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textSize="15sp"
+        android:background="@null"
+        android:ems="18" >
+        <requestFocus />
+    </EditText>
+    
+    <ImageView 
+        android:layout_height="1.5dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_button_green"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/change_linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/change_checkOut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textSize="15sp"
+        android:background="@null"
+        android:ems="18" >
+    </EditText>
+    
+    <ImageView 
+        android:layout_height="1.5dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_button_green"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

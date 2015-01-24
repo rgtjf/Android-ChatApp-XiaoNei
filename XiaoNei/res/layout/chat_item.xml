@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:background="@color/chat_background">
+    
+    <include 
+        android:id="@+id/include_chat_time"
+        layout="@layout/include_chat_time" />
+    
+	<RelativeLayout 
+	    android:id="@+id/relativeLeft"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/include_chat_time"
+	    android:paddingTop="@dimen/chat_item_padding_top"
+	    android:paddingBottom="@dimen/chat_item_padding_bottom"
+	    android:paddingLeft="@dimen/chat_item_padding_h_short"
+	    android:paddingRight="@dimen/chat_item_padding_h_long"
+	    android:background="@color/chat_background">
+	    
+	    <ImageView 
+	        android:id="@+id/chat_image_left"
+	        android:layout_height="@dimen/chat_image_size"
+	        android:layout_width="@dimen/chat_image_size"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="@dimen/chat_image_marginTop"
+	        android:background="@color/random_1"/>
+	    
+	    <TextView 
+	        android:id="@+id/chat_name"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_toRightOf="@+id/chat_image_left"
+	        android:layout_alignTop="@+id/chat_image_left"
+	        android:paddingLeft="@dimen/chat_name_paddingLeft"
+	        android:textSize="@dimen/chat_name_textSize"
+	        android:textColor="@color/chat_name_text"
+	        android:text="000"/>
+	    
+	    <TextView 
+	        android:id="@+id/chat_text_left"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_toRightOf="@+id/chat_image_left"
+	        android:layout_below="@+id/chat_name"
+	        android:paddingTop="@dimen/chat_text_paddingTop"
+	        android:paddingBottom="@dimen/chat_text_paddingBottom"
+	        android:layout_marginLeft="@dimen/chat_text_padding_textAndPhoto"
+	        android:textSize="@dimen/chat_text_size"
+	        android:textColor="@color/chat_text"
+	        android:background="@drawable/selector_chat_left"/>
+	
+	</RelativeLayout>
+	
+	
+	<RelativeLayout
+	    android:id="@+id/relativeRight"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/include_chat_time"
+	    android:paddingTop="@dimen/chat_item_padding_top"
+	    android:paddingBottom="@dimen/chat_item_padding_bottom"
+	    android:paddingLeft="@dimen/chat_item_padding_h_long"
+	    android:paddingRight="@dimen/chat_item_padding_h_short"
+	    android:background="@color/chat_background">
+    
+	    <ImageView 
+	        android:id="@+id/chat_image_Right"
+	        android:layout_height="@dimen/chat_image_size"
+	        android:layout_width="@dimen/chat_image_size"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="@dimen/chat_image_marginTop"
+	        android:background="@color/random_5"/>
+	    
+	    <TextView 
+	        android:id="@+id/chat_text_Right"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_toLeftOf="@+id/chat_image_Right"
+	        android:layout_marginRight="@dimen/chat_text_padding_textAndPhoto"
+	        android:paddingTop="@dimen/chat_text_paddingTop"
+	        android:paddingBottom="@dimen/chat_text_paddingBottom"
+	        android:text="test"
+	        android:textColor="@color/chat_text"
+	        android:textSize="@dimen/chat_text_size"
+	        android:background="@drawable/selector_chat_right"/>
+	    
+	    <ProgressBar
+	        android:id="@+id/chat_status"
+	        android:layout_width="@dimen/chat_status_progress_size"
+	        android:layout_height="@dimen/chat_status_progress_size"
+	        android:layout_toLeftOf="@+id/chat_text_Right"
+	        android:layout_marginTop="@dimen/chat_status_progress_paadingTop"
+	        android:visibility="visible" />
+    
+	</RelativeLayout>
+</RelativeLayout>

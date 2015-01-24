@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shoulder.xiaonei.myClass_myView.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@color/main_background">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    android:fillViewport="true" >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <ImageView 
+        android:layout_marginTop="80dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_button_green"/>
+    <Button 
+        android:id="@+id/clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="清空缓存"
+        android:textSize="15sp"
+        android:textColor="@color/text_black_dark"
+        android:background="@drawable/selector_white"/>
+     <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_button_green"/>
+    <Button 
+        android:id="@+id/logOff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="注销登陆"
+        android:textSize="15sp"
+        android:textColor="@color/text_black_dark"
+        android:background="@drawable/selector_white"/>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_button_green"/>
+    <Button 
+        android:id="@+id/change_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="更改密码"
+        android:textSize="15sp"
+        android:textColor="@color/text_black_dark"
+        android:background="@drawable/selector_white"/>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_button_green"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_button_green"/>
+    <Button 
+        android:id="@+id/giveMeFive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/give_me_five_buttonText"
+        android:textSize="15sp"
+        android:textColor="@color/text_black_dark"
+        android:background="@drawable/selector_white"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_button_green"/>
+    
+
+</LinearLayout>
+</com.shoulder.xiaonei.myClass_myView.MyScrollView>

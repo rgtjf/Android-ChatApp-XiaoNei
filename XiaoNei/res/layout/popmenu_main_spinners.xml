@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal" >
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/pop_menu_shadow_width_right"
+    android:paddingBottom="@dimen/pop_menu_shadow_width_bottom"
+    android:background="#E3E3E3" 
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+    
+    <RelativeLayout 
+        android:layout_height="@dimen/pop_menu_function_item_height"
+        android:layout_width="@dimen/pop_menu_function_item_width">
+	    <TextView
+	      android:id="@+id/all"
+	      android:layout_height="@dimen/pop_menu_function_item_height"
+          android:layout_width="@dimen/pop_menu_function_item_width"
+          android:paddingLeft="@dimen/title_spinner_paddingLeft"
+          android:gravity="center_vertical"
+	      android:text="所有活动"
+	      android:textSize="@dimen/pop_menu_textsize"
+	      android:textColor="@color/spinner_title_payAttentionTo_textColor"
+	      android:background="@drawable/selector_spinner_title"/>
+	</RelativeLayout>
+	    
+	    
+    <ImageView 
+        android:id="@+id/line_1"
+        android:layout_width="@dimen/pop_menu_function_item_width"
+        android:layout_height="0.5dp"
+        android:background="@color/spinner_title_payAttentionTo_lineColor"/>
+        
+    <RelativeLayout 
+        android:layout_height="@dimen/pop_menu_function_item_height"
+        android:layout_width="@dimen/pop_menu_function_item_width">
+	    <TextView
+		      android:id="@+id/mySubscribe"
+		      android:layout_height="@dimen/pop_menu_function_item_height"
+          	  android:layout_width="@dimen/pop_menu_function_item_width"
+          	  android:paddingLeft="@dimen/title_spinner_paddingLeft"
+          	  android:gravity="center_vertical"
+		      android:text="订阅活动"
+		      android:textSize="@dimen/pop_menu_textsize"
+		      android:textColor="@color/spinner_title_payAttentionTo_textColor"
+		      android:background="@drawable/selector_spinner_title"/>
+	</RelativeLayout>
+	
+    <ImageView 
+        android:id="@+id/line_2"
+        android:layout_width="@dimen/pop_menu_function_item_width"
+        android:layout_height="0.5dp"
+        android:background="@color/spinner_title_payAttentionTo_lineColor"/>
+       
+    
+
+</LinearLayout>
+
+<ImageView 
+    android:layout_height="match_parent"
+    android:layout_width="@dimen/pop_menu_screen_padding_right"
+    android:background="@color/transparent"/>
+</LinearLayout>

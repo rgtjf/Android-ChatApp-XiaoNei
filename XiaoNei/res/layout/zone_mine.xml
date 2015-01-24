@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout  
+       android:id="@+id/linearLayout1"  
+       android:layout_width="fill_parent"  
+       android:layout_height="@dimen/viewPage_textLinear_height" 
+       android:orientation="horizontal" 
+       android:background="#ffffff">
+       <TextView  
+           android:id="@+id/my_act"  
+           android:layout_width="fill_parent"  
+           android:layout_height="fill_parent"  
+           android:layout_weight="1"  
+           android:gravity="center"  
+           android:text="活动"  
+           android:textColor="@color/widget_tab_text"  
+           android:textSize="17sp" />  
+           
+       <TextView  
+           android:id="@+id/my_org"  
+           android:layout_width="fill_parent"  
+           android:layout_height="fill_parent"  
+           android:layout_weight="1"  
+           android:gravity="center"  
+           android:text="社团"  
+           android:textColor="@color/text_black_tab"  
+           android:textSize="17sp" />  
+           
+       <TextView  
+           android:id="@+id/my_tucao"  
+           android:layout_width="fill_parent"  
+           android:layout_height="fill_parent"  
+           android:layout_weight="1"  
+           android:gravity="center"  
+           android:text="吐槽"  
+           android:textColor="@color/text_black_tab"  
+           android:textSize="17sp" />  
+   </LinearLayout>  
+  
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="3dp"
+       android:background="#FFFFFF">
+       
+       <ImageView 
+           android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:layout_alignParentBottom="true"
+           android:background="@color/line"/>
+       
+       <ImageView  
+			android:id="@+id/cursor"  
+			android:layout_width="80dp"  
+			android:layout_height="match_parent"  
+			android:scaleType="fitXY"  
+			android:src="@drawable/shape_widget_tab_line" />  
+       
+	</RelativeLayout>
+  
+	<android.support.v4.view.ViewPager  
+	    android:id="@+id/vPager"  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="match_parent"  
+        android:layout_gravity="center"  
+        android:background="#ffffff"   
+        android:flipInterval="30"  
+        android:persistentDrawingCache="animation" />  
+	       
+</LinearLayout>

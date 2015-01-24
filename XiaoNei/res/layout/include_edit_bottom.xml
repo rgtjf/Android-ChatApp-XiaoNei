@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFEFE" >
+    
+    <ImageView 
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#EBEBEB" />
+    
+    <Button 
+        android:id="@+id/evaluate"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginLeft="@dimen/widget_edit_bottom_button_padding_h"
+        android:layout_marginRight="@dimen/widget_edit_bottom_button_padding_h"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="评分"
+        android:background="@drawable/select_button_edit_bottom_left"/>
+    
+    <Button 
+        android:id="@+id/comment"
+        android:layout_height="@dimen/widget_edit_bottom_button_height"
+        android:layout_width="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/widget_edit_bottom_button_padding_h"
+        android:layout_marginRight="@dimen/widget_edit_bottom_button_padding_h"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="发送"
+        android:background="@drawable/select_button_edit_bottom_right"/>
+    
+    <EditText 
+        android:id="@+id/edit_bottom"
+        android:layout_above="@+id/line_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/evaluate"
+        android:layout_toLeftOf="@+id/comment"/>
+ 
+
+</RelativeLayout>

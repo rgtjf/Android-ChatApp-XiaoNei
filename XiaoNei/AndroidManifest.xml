@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.2" package="com.shoulder.xiaonei">
+    
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	
+	<!-- 二维码扫描需要 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk android:minSdkVersion="13" android:targetSdkVersion="19"/>
+    
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.shoulder.xiaonei.myClass.MyVal" android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        <activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Start_Page_Normal" android:theme="@style/NoTitle_gradient_InAndOut">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.JiangZuo" android:theme="@style/myTitle">  
+		</activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.Main" android:theme="@style/myTitle">
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Login_or_Register" android:theme="@style/NoTitle_gradient_InAndOut">
+        </activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.jianzhi.JianZhi" android:theme="@style/myTitle">  
+		</activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tucao.TuCaoQiang" android:theme="@style/myTitle">
+        </activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.ErShouShuShouYe">  
+		</activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.TiaoZao" android:theme="@style/myTitle">  
+		</activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.Detail_TiaoZao" android:theme="@style/myTitle">  
+		</activity> 
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.TiaoZaoFaBu">  
+		</activity> 
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.JiangZuoDetail">  
+		</activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.ErShouShuDetail">  
+		</activity>  
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.jianzhi.JianZhiDetail">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.HuoDong" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.HuoDong_Detail" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.jianzhi.Detail_JianZhi" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.SheTuan_Detail" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.Image_HuoDong" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.Image_SheTuan_Logo" android:theme="@style/myTitle">  
+		</activity>		
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.information.Information" android:theme="@style/myTitle">  
+		</activity>		
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.Shetuan_Subscribe_Main" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.SheTuan_Subscribe_Second" android:theme="@style/myTitle">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Register_Page1" android:theme="@style/NoTitle_gradient_InAndOut" android:windowSoftInputMode="adjustResize">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Register_Page2" android:theme="@style/NoTitle_gradient_InAndOut" android:windowSoftInputMode="adjustResize">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Login" android:theme="@style/NoTitle_gradient_InAndOut" android:windowSoftInputMode="adjustResize">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Set_Up" android:theme="@style/myTitle">  
+		</activity>			
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tucao.TuCaoQiang_Comment" android:theme="@style/myTitle" android:windowSoftInputMode="adjustResize">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tucao.TuCaoQiang_Comment_Fabu" android:theme="@style/myTitle">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tucao.Text_Full" android:theme="@style/NoTitle_gradient_justIn">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.Image_TiaoZao" android:theme="@style/myTitle">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.TiaoZao_Message" android:theme="@style/myTitle">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.TiaoZao_Search" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Set_Up_GiveMeFive" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.Shetuan_Search" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.HuoDong_Remain" android:theme="@style/NoTitle_gradient_InAndOut">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.TiaoZaoFaBu_Text" android:windowSoftInputMode="adjustPan">  
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.tiaozao.TiaoZaoFaBu_Photo">  
+        </activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Set_Up_Change_Password" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Set_up_Change_Phone" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.HuoDong_PingJia" android:theme="@style/myTitle" android:windowSoftInputMode="adjustResize">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.myZone.MyZone" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.School_List" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.Start_Page" android:theme="@style/NoTitle_gradient_justIn">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.main.Scan" android:theme="@style/myTitle">  
+		</activity>	
+		<activity android:label="@string/app_name" android:name="chat.Chat" android:theme="@style/myTitle_test">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="chat.Chat_GourpMember" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="chat.Contacts" android:theme="@style/myTitle">  
+		</activity>				
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.myZone.YourZone" android:theme="@style/NoTitle_gradient_justIn">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="com.shoulder.xiaonei.others.MyInformation" android:theme="@style/myTitle">  
+		</activity>
+		<activity android:label="@string/app_name" android:name="chat.Contacts_All" android:theme="@style/myTitle">  
+		</activity>		
+		
+		
+		<receiver android:name="com.shoulder.xiaonei.myClass.AlarmReceiver"/>
+		<receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+		<receiver android:name="com.shoulder.xiaonei.myClass_chat.GroupMsgReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.avoscloud.group.action" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shoulder.xiaonei.myClass_chat.ChatMsgReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.avoscloud.session.action" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.avos.avoscloud.PushService"/>
+        <receiver android:name="com.shoulder.xiaonei.myClass_chat.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.shoulder.GUAN_ZHU" />
+                <action android:name="com.shouldr.HuoDongTuiJian" />
+            </intent-filter>
+        </receiver>
+		
+    <meta-data android:name="UMENG_APPKEY" android:value="54337f51fd98c5b8bd017816"/>
+    <meta-data android:name="UMENG_CHANNEL" android:value="Channel ID"/>
+	<activity android:configChanges="orientation|keyboard" android:launchMode="singleTask" android:name="com.umeng.socialize.view.ShareActivity" android:noHistory="true" android:theme="@style/Theme.UMDialog" android:windowSoftInputMode="stateVisible|adjustResize"/>
+	<activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+	<activity android:configChanges="orientation|navigation|keyboardHidden" android:name="com.renn.rennsdk.oauth.OAuthActivity"/>
+	<activity android:configChanges="orientation|keyboard" android:name="com.umeng.socialize.view.CommentActivity" android:theme="@style/Theme.UMDefault"/>
+	<activity android:configChanges="orientation|keyboard" android:name="com.umeng.socialize.view.CommentDetail" android:noHistory="true" android:theme="@style/Theme.UMDefault"/>
+	<activity android:configChanges="orientation|keyboard" android:name="com.umeng.socialize.view.CommentDetailNoMap" android:noHistory="true" android:theme="@style/Theme.UMDefault"/>
+
+	<service
+	    android:name="com.umeng.update.net.DownloadingService"
+	    android:process=":DownloadingService" >
+	</service>
+	<activity 
+	    android:name="com.umeng.update.UpdateDialogActivity"
+	    android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+	</activity>
+	<service android:name="com.avos.avoscloud.PushService" />
+
+</application>
+
+</manifest>

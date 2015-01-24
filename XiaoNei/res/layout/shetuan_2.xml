@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <com.shoulder.xiaonei.XListView.XListView
+        android:id="@+id/ListView"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:listSelector="@color/selector"
+        android:divider="@null"
+        android:scrollbarThumbVertical="@drawable/shape_widget_scollbar"
+        android:scrollbarSize="@dimen/widget_scrollbar_width" >  
+     </com.shoulder.xiaonei.XListView.XListView>
+
+</LinearLayout>

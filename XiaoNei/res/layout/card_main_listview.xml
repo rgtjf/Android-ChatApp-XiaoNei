@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<include 
+    layout="@layout/include_loading"/>
+
+<include layout="@layout/include_clue" android:visibility="invisible"/>
+    
+<RelativeLayout
+    android:id="@+id/connectSuccessLayout"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+    
+        <com.shoulder.xiaonei.XListView.XListView
+	        android:id="@+id/ListView"  
+	        android:layout_width="match_parent"  
+	        android:layout_height="match_parent"  
+	        android:paddingLeft="@dimen/card_main_padding_left"
+	        android:paddingRight="10dp"  
+	        android:dividerHeight="8dp"  
+	        android:divider="@android:color/transparent"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:scrollbarThumbVertical="@drawable/shape_widget_scollbar"
+	        android:scrollbarSize="@dimen/widget_scrollbar_width">
+	     </com.shoulder.xiaonei.XListView.XListView>
+	     
+         <TextView 
+    	    android:id="@+id/historyActivities"
+    	    android:visibility="invisible"
+    	    android:layout_height="@dimen/main_clickToGetHistoryActivity_height"
+    	    android:layout_width="match_parent"
+    	    android:gravity="center"
+    	    android:text="@string/main_clickToGetHistoryActivity"
+    	    android:textSize="@dimen/main_clickToGetHistoryActivity_textSize"
+    	    android:textColor="#ffffff"
+    	    android:background="@color/main_clickToGetHistoryActivities_background"/>
+    	
+</RelativeLayout>
+</FrameLayout>

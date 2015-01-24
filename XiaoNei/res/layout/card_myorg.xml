@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+    
+    <ImageView 
+        android:id="@+id/line"
+        android:layout_height="4dp"
+        android:layout_width="fill_parent"
+        android:background="@color/main_background"/>
+    
+    <RelativeLayout 
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="#ffffff">
+    	
+    	<RelativeLayout
+    	    android:id="@+id/logo_linear"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:paddingTop="@dimen/myorg_logo_margin_v"
+    	    android:paddingBottom="@dimen/myorg_logo_margin_v"
+    	    android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true">
+	    <ImageView 
+	        android:id="@+id/logo"
+	        android:layout_height="@dimen/myorg_logo"
+	        android:layout_width="@dimen/myorg_logo"
+	        android:layout_marginLeft="@dimen/myZone_all_padding_left"
+	        android:layout_marginRight="@dimen/myorg_logo_margin_h"
+	        android:scaleType="centerCrop"
+	        android:background="#ffffff"/>
+	    
+	    <TextView
+	        android:id="@+id/name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/logo"
+	        android:layout_alignTop="@+id/logo"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="text"
+	        android:textColor="@color/text_black_dark"
+	        android:textSize="20sp"/>
+	    
+	    <TextView 
+	        android:id="@+id/mark"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_alignLeft="@+id/name"
+	        android:layout_below="@+id/name"
+	        android:layout_marginTop="4dp"
+	        android:text="4.5分"
+	        android:textSize="15sp"
+	        android:textColor="#A9A9A9"/>
+	    </RelativeLayout>
+	    
+	     <ImageView
+		        android:id="@+id/myCard"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignTop="@+id/logo_linear"
+		        android:layout_alignBottom="@+id/logo_linear"
+		        android:focusable="true"
+		        android:clickable="true"
+		        android:background="@drawable/selector_cover_transparent"/>
+     
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="@dimen/myZone_line_height"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/widget_shadow_top_to_bottom"/>
+
+</RelativeLayout>

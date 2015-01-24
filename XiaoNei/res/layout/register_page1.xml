@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:background="#F0F0EC">
+    
+    
+    
+    <RelativeLayout 
+         android:layout_alignParentLeft="true"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         >
+    <ImageView  
+        android:layout_width="29dp"  
+        android:layout_height="fill_parent"
+        android:src="@drawable/back"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="7dp"
+        android:layout_centerVertical="true"  
+        />  
+     <Button
+          android:id="@+id/left_btn" 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@drawable/selector_cover_transparent"/>
+     </RelativeLayout>  
+
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0EC"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+     
+     <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/temp_01"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/register_padding_v"
+        	android:paddingBottom="@dimen/register_padding_v"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="选择学校"/>
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@+id/temp_01"
+        android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/register_padding_v"
+        android:paddingBottom="@dimen/register_padding_v"
+        android:textSize="15sp"
+        android:text="请点击选择.."
+        android:textColor="#898989"
+        android:background="@null" >
+    </TextView>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/temp_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:text="选择性别"
+        android:textSize="15sp" />
+    <RadioGroup
+        android:layout_toRightOf="@+id/temp_05"
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff"  >
+        <RadioButton
+            android:id="@+id/radioGirl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="女" />
+        <RadioButton
+            android:id="@+id/radioBoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+    </RadioGroup>
+    </RelativeLayout>
+    
+        <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/temp_02_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/register_padding_v"
+        	android:paddingBottom="@dimen/register_padding_v"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="昵称        "/>
+	    <EditText
+	        android:id="@+id/nickname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/temp_02_1"
+	        android:paddingTop="@dimen/register_padding_v"
+	        android:paddingBottom="@dimen/register_padding_v"
+	        android:ems="10"
+	        android:hint="请输入昵称.."
+	        android:background="@null"
+	        android:inputType="textPersonName"
+	        android:textSize="15sp" />
+    </RelativeLayout>    
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#EF6E7E"
+        android:text="下一步"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_card_noshadow" >
+    
+    <TextView 
+        android:id="@+id/hiMan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dialog_youHaveFriends_padding_hiMan_AndTop"
+        android:text="hi Tom"
+        android:textStyle="bold"
+        android:textSize="@dimen/dialog_youHaveFriends_hiMan_textSize"
+        android:textColor="#282828"/>
+    
+    <TextView 
+        android:id="@+id/someoneWATCHyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dialog_youHaveFriends_padding_hiMan_AndSomeoneWATCHyou"
+        android:text="Jack wants to be friends with you"
+        android:textSize="@dimen/dialog_youHaveFriends_someoneWATCHyou_textSize"
+        android:textColor="#404040"/>
+    
+    <com.shoulder.xiaonei.myClass_myView.CircularImage 
+        android:id="@+id/friendsAvator"
+        android:layout_width="@dimen/dialog_youHaveFriends_friendsAvator_size"
+        android:layout_height="@dimen/dialog_youHaveFriends_friendsAvator_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dialog_youHaveFriends_padding_someoneWATCHyou_AndFriendsAvator"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dialog_youHaveFriends_padding_FriendsAvator_AndButton"
+        android:layout_marginLeft="@dimen/dialog_youHaveFriends_padding_button_h"
+        android:layout_marginRight="@dimen/dialog_youHaveFriends_padding_button_h"
+        android:layout_marginBottom="@dimen/dialog_youHaveFriends_padding_button_AndBottom">
+        
+        <Button 
+            android:id="@+id/agree"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="同意"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dialog_youHaveFriends_button_textSize"
+            android:paddingLeft="@dimen/dialog_youHaveFriends_button_text_padding_h"
+            android:paddingRight="@dimen/dialog_youHaveFriends_button_text_padding_h"
+            android:paddingTop="@dimen/dialog_youHaveFriends_button_text_padding_v"
+            android:paddingBottom="@dimen/dialog_youHaveFriends_button_text_padding_v"
+            android:background="@drawable/selector_button_green"/>
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/dialog_youHaveFriends_padding_button_h"
+            android:orientation="horizontal"
+            android:background="@color/transparent">
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/uncleBuYue"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="拒绝"
+            android:textColor="#535353"
+            android:textSize="@dimen/dialog_youHaveFriends_button_textSize"
+            android:paddingLeft="@dimen/dialog_youHaveFriends_button_text_padding_h"
+            android:paddingRight="@dimen/dialog_youHaveFriends_button_text_padding_h"
+            android:paddingTop="@dimen/dialog_youHaveFriends_button_text_padding_v"
+            android:paddingBottom="@dimen/dialog_youHaveFriends_button_text_padding_v"
+            android:background="@drawable/selector_button_white"/>
+    </LinearLayout>
+
+</LinearLayout>

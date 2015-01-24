@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="怕油烟就不要进厨房，怕傻逼就不要来世上"
+        android:textSize="25sp"
+        android:textColor="#ffffff"/>
+    
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#1E2731"
+            android:text="\@某某某某某"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/pub_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/user_id"
+            android:layout_marginTop="5dp"
+            android:text="3天前"
+            android:textSize="15sp"
+            android:textColor="#999999"/>
+        <TextView 
+            android:id="@+id/zan_cnt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/pub_time"
+            android:layout_marginTop="5dp"
+            android:text="2个赞"
+            android:textSize="15sp"
+            android:textColor="#999999"/>
+        <ImageButton
+            android:id="@+id/zan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/zan_no" />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    
+    <Button 
+        android:id="@+id/comment_cnt"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_cover_transparent"
+        android:text="查看评论（163条）"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#F5F5F5"/>
+        
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:background="@color/titleColor"
+    android:gravity="top"
+    android:orientation="horizontal" >
+  
+    
+    <RelativeLayout 
+         android:id="@+id/left_relativelayout"
+         android:layout_alignParentLeft="true"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         >
+    <ImageView  
+        android:layout_height="@dimen/title_iconBack_height"
+        android:layout_width="@dimen/card_main_padding_left"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="2dp"
+        android:layout_centerVertical="true"  
+        />  
+    <ImageView  
+        android:id="@+id/logo"
+        android:layout_width="@dimen/title_icon_width"  
+        android:layout_height="fill_parent"
+        android:src="@drawable/icon"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="@dimen/card_main_padding_left"
+        android:paddingLeft="@dimen/title_icon_padding_left"
+        android:layout_centerVertical="true"  
+        />  
+     <Button
+          android:id="@+id/left_btn" 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@drawable/selector_cover_transparent"/>
+     </RelativeLayout>      
+      
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@+id/left_relativelayout"
+        android:paddingLeft="@dimen/title_spinner_paddingLeft"
+        android:paddingRight="50dp"
+        android:layout_height="fill_parent">
+    
+        <EditText
+         android:id="@+id/search"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:paddingLeft="0dp"
+         android:paddingRight="0dp"
+         android:background="@null"
+         android:ems="10" >
+         	<requestFocus />
+         </EditText>
+      
+        <ImageView 
+            android:id="@+id/search_line"
+            android:layout_below="@+id/search"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:background="@color/edit_line_title"/>
+      </RelativeLayout>
+    
+    
+    <RelativeLayout 
+         android:id="@+id/right_rel"
+         android:layout_alignParentRight="true"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         >
+     <TextView 
+         	 android:id="@+id/function_text"
+        	 android:layout_width="50dp"  
+             android:layout_height="fill_parent"  
+             android:layout_centerVertical="true"  
+             android:layout_centerHorizontal="true"
+             android:gravity="center"
+             android:background="@null"
+             android:text="搜索"
+             android:textSize="15sp"
+             /> 
+      <Button
+          android:id="@+id/right_btn" 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:clickable="true"
+          android:background="@drawable/selector_cover_transparent"/>
+     </RelativeLayout>
+     
+     <include layout="@layout/include_title_bottom" android:layout_alignParentBottom="true"/>
+
+  
+</RelativeLayout>  

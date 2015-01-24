@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_gravity="fill_horizontal"  
+    android:layout_height="match_parent"
+    android:background="@color/titleColor"  >  
+    
+    <RelativeLayout 
+         android:id="@+id/left_relativelayout"
+         android:layout_alignParentLeft="true"
+         android:layout_width="@dimen/title_left_width"
+         android:layout_height="wrap_content"
+         >
+    <ImageView 
+        android:id="@+id/logoMenu"
+        android:layout_height="@dimen/title_iconMenu_height"
+        android:layout_width="@dimen/card_main_padding_left"
+        android:src="@drawable/logomenu"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        />
+    <ImageView  
+        android:id="@+id/logo"
+        android:layout_width="@dimen/title_icon_width"  
+        android:layout_height="fill_parent"
+        android:src="@drawable/icon"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="@dimen/card_main_padding_left"
+        android:paddingLeft="@dimen/title_icon_padding_left"
+        android:layout_centerVertical="true"  
+        />  
+     <Button
+          android:id="@+id/left_btn" 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@drawable/selector_cover_transparent"/>
+     </RelativeLayout>        
+      
+    
+    <RelativeLayout 
+        android:id="@+id/rel_spinnerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/left_relativelayout"  
+        android:paddingLeft="@dimen/title_spinner_paddingLeft"
+        >
+     
+    	<TextView 
+            android:id="@+id/text"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:paddingRight="3dp"
+        	android:layout_centerVertical="true"
+        	android:gravity="center"  
+            android:text="所有活动"  
+            android:textSize="18sp"  
+            android:textColor="#000000"  
+            android:singleLine="true" />  
+            
+    	<ImageView 
+    	    android:id="@+id/spinner_payAttentionTo"
+    	    android:layout_height="@dimen/title_spinner_payAttentionTo_size"
+    	    android:layout_width="@dimen/title_spinner_payAttentionTo_size"
+    	    android:layout_toRightOf="@+id/text"
+    	    android:layout_alignBottom="@+id/text"
+    	    android:src="@drawable/spinner"
+    	    />
+    	
+    </RelativeLayout>
+    
+    <RelativeLayout 
+         android:layout_alignParentRight="true"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         >
+     <ImageView 
+         	 android:id="@+id/function_image"
+        	 android:layout_width="@dimen/title_function_width"  
+             android:layout_height="wrap_content"  
+             android:layout_centerVertical="true"  
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/function"
+             android:scaleType="fitCenter"
+             android:background="@null"
+             /> 
+      <Button
+          android:id="@+id/right_btn" 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:clickable="true"
+          android:background="@drawable/selector_cover_transparent"/>
+      </RelativeLayout>
+     
+      <include layout="@layout/include_title_bottom" android:layout_alignParentBottom="true"/>
+  
+</RelativeLayout>  

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_card_noshadow"
+     >
+    
+    <ImageView 
+        android:id="@+id/line"
+        android:background="@color/main_background"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"/>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/line">
+    <TextView 
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        android:text="text"
+        android:lines="1"
+        android:ellipsize="end"/>
+
+    <TextView 
+        android:id="@+id/describe"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:text="123"/>
+
+	<ImageView
+		        android:id="@+id/myCard"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignTop="@+id/title"
+		        android:layout_alignBottom="@+id/describe"
+		        android:focusable="true"
+		        android:clickable="true"
+		        android:background="@drawable/selector_cover_transparent"/>
+    </RelativeLayout>
+</RelativeLayout>
